@@ -1,0 +1,16 @@
+<by.grsu.matusevich.table.UserProfileTable>
+  <rows>
+    <by.grsu.matusevich.datamodel.UserProfile>
+      <id>12859702032219</id>
+      <login>admin</login>
+      <password>admin</password>
+      <role>tutor</role>
+    </by.grsu.matusevich.datamodel.UserProfile>
+    <by.grsu.matusevich.datamodel.UserProfile>
+      <id>12859856377110</id>
+      <login>user</login>
+      <password>user</password>
+      <role>student</role>
+    </by.grsu.matusevich.datamodel.UserProfile>
+  </rows>
+</by.grsu.matusevich.table.UserProfileTable>

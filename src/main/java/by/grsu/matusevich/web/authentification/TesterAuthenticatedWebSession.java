@@ -2,6 +2,9 @@ package by.grsu.matusevich.web.authentification;
 
 import by.grsu.matusevich.dataaccess.impl.UserProfileDao;
 import by.grsu.matusevich.datamodel.UserProfile;
+import by.grsu.matusevich.datamodel.UserRole;
+import by.grsu.matusevich.web.Student.StudentPage;
+import by.grsu.matusevich.web.Tutor.TutorPage;
 import org.apache.wicket.authroles.authentication.AuthenticatedWebSession;
 import org.apache.wicket.authroles.authorization.strategies.role.Roles;
 import org.apache.wicket.markup.html.WebPage;
@@ -32,20 +35,14 @@ public class TesterAuthenticatedWebSession extends AuthenticatedWebSession {
     @Override
     public boolean authenticate(final String username, final String password)
     {
-        final String adminData = "admin";
         UserProfileDao userProfileDao = new UserProfileDao("testXmlFolder");
         List<UserProfile> users = userProfileDao.getAll();
+        for (UserProfile userProfile : users)
+            if (userProfile.getLogin().equals(username) && userProfile.getPassword().equals(password)) {
+                if (userProfile.getRole().equals(UserRole.student)) throw new RestartResponseException(new StudentPage());
+                else throw new RestartResponseException(new TutorPage());
+            }
 
-
-        if (adminData.equals(username) && adminData.equals(password)) {
-            throw new RestartResponseException(AdminPage.class);
-        }
-        else {
-            for (UserProfile userProfile : users)
-                if (userProfile.getLogin().equals(username) && userProfile.getPassword().equals(password)) {
-                    throw new RestartResponseException(new UserPage(username, password));
-                }
-        }
         return false;
         // Check username and password
         //return adminData.equals(username) && adminData.equals(password);
