@@ -1,60 +1,50 @@
-<table.TestTable>
+<by.grsu.matusevich.table.TestTable>
   <rows>
-    <datamodel.TesT>
-      <id>255011302305901</id>
-      <TestName>Testing test</TestName>
-      <Questions/>
-    </datamodel.TesT>
-    <datamodel.TesT>
-      <id>255011415967237</id>
-      <TestName>Testing test</TestName>
-      <Questions/>
-    </datamodel.TesT>
-    <datamodel.TesT>
-      <id>255496755671139</id>
-      <TestName>Testing test</TestName>
+    <by.grsu.matusevich.datamodel.TesT>
+      <id>2137780326937</id>
+      <TestName>Testing by.grsu.matusevich.test</TestName>
       <Questions>
-        <datamodel.Question>
+        <by.grsu.matusevich.datamodel.Question>
           <questionText>What is a star?</questionText>
           <answers>
-            <datamodel.Answer>
+            <by.grsu.matusevich.datamodel.Answer>
               <answerText>Sun</answerText>
               <answerCorrect>true</answerCorrect>
-            </datamodel.Answer>
-            <datamodel.Answer>
+            </by.grsu.matusevich.datamodel.Answer>
+            <by.grsu.matusevich.datamodel.Answer>
               <answerText>Moon</answerText>
               <answerCorrect>false</answerCorrect>
-            </datamodel.Answer>
-            <datamodel.Answer>
+            </by.grsu.matusevich.datamodel.Answer>
+            <by.grsu.matusevich.datamodel.Answer>
               <answerText>Earth</answerText>
               <answerCorrect>false</answerCorrect>
-            </datamodel.Answer>
+            </by.grsu.matusevich.datamodel.Answer>
           </answers>
-        </datamodel.Question>
+        </by.grsu.matusevich.datamodel.Question>
       </Questions>
-    </datamodel.TesT>
-    <datamodel.TesT>
-      <id>255496812006062</id>
-      <TestName>Testing test</TestName>
+    </by.grsu.matusevich.datamodel.TesT>
+    <by.grsu.matusevich.datamodel.TesT>
+      <id>2137812939551</id>
+      <TestName>Testing by.grsu.matusevich.test</TestName>
       <Questions>
-        <datamodel.Question>
+        <by.grsu.matusevich.datamodel.Question>
           <questionText>What is a star?</questionText>
           <answers>
-            <datamodel.Answer>
+            <by.grsu.matusevich.datamodel.Answer>
               <answerText>Sun</answerText>
               <answerCorrect>true</answerCorrect>
-            </datamodel.Answer>
-            <datamodel.Answer>
+            </by.grsu.matusevich.datamodel.Answer>
+            <by.grsu.matusevich.datamodel.Answer>
               <answerText>Moon</answerText>
               <answerCorrect>false</answerCorrect>
-            </datamodel.Answer>
-            <datamodel.Answer>
+            </by.grsu.matusevich.datamodel.Answer>
+            <by.grsu.matusevich.datamodel.Answer>
               <answerText>Earth</answerText>
               <answerCorrect>false</answerCorrect>
-            </datamodel.Answer>
+            </by.grsu.matusevich.datamodel.Answer>
           </answers>
-        </datamodel.Question>
+        </by.grsu.matusevich.datamodel.Question>
       </Questions>
-    </datamodel.TesT>
+    </by.grsu.matusevich.datamodel.TesT>
   </rows>
-</table.TestTable>
+</by.grsu.matusevich.table.TestTable>
